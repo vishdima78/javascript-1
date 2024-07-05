@@ -1,17 +1,16 @@
-const projectName = 'Сайт магазина';
-const price = 2000;
-const author = 'Василий Пупкин';
+// const bmwX3 = 100000;
+// const fordFocusPrice = 10000;
+// const budget = 20000;
 
+// let massage = budget > bmwX3 
+// ? 'BMW' 
+// :budget > fordFocusPrice ? 'FordFocus' : 'велосипед';
 
-const template = author + ' заказал ' + projectName + ' по цене ' + price + '$';
-console.log(template);
-const template2 = `${author} заказал ${projectName} по цене ${price}$`;
+// const str = 1 > 0 ? 'больше нуля' : 'не больше нуля';
+// console.log(str) 
 
+// console.log(`Я хочу купить ${massage}`) 
 
-console.log(template2);
-
-const template3 = 'проект \n' + 'цена: ' + price + '$';
-console.log(template3);
-const template4 = `Проект
-Цена: ${price}$`;
-console.log(template4);
+let x = prompt();
+let answer = Number(x) == 22 ? 'Успех' : Number(x) == -8 ? 'Успех' : x == 'Я не робот' ? 'Успех' : 'Вы робот';
+console.log(answer);
