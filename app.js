@@ -11,6 +11,23 @@
 
 // console.log(`Я хочу купить ${massage}`) 
 
-let x = prompt();
+
+// Решение через тернарные операторы
+
+/*let x = prompt('Сколько будет 7 + или - 15?');
 let answer = Number(x) == 22 ? 'Успех' : Number(x) == -8 ? 'Успех' : x == 'Я не робот' ? 'Успех' : 'Вы робот';
-console.log(answer);
+console.log(answer);*/
+
+
+const x = prompt('Сколько будет 7 + или - 15?');
+switch(true) {
+    case Number(x) === 22:
+    case Number(x) === -5:
+        console.log('Успех');
+    break;
+    case x === 'Я не робот':
+    console.log('Успех');
+    break;
+    default:
+    console.log('Вы робот');
+}
