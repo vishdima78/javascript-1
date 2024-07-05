@@ -1,33 +1,17 @@
-// const bmwX3 = 100000;
-// const fordFocusPrice = 10000;
-// const budget = 20000;
+/*const userBalance = 1200;
+const userBonus = 120;
+const isBanned = false;
+const isExist = false;
+const isSelling = false;
 
-// let massage = budget > bmwX3 
-// ? 'BMW' 
-// :budget > fordFocusPrice ? 'FordFocus' : 'велосипед';
-
-// const str = 1 > 0 ? 'больше нуля' : 'не больше нуля';
-// console.log(str) 
-
-// console.log(`Я хочу купить ${massage}`) 
+console.log((userBalance > 1000 || userBonus > 100) && !isBanned && !isExist && !isSelling); */
 
 
-// Решение через тернарные операторы
+const userBalance = 1200;
+const userBonus = 90;
+const isBanned = false;
+const isExist = false;
+const isSelling = true;
 
-/*let x = prompt('Сколько будет 7 + или - 15?');
-let answer = Number(x) == 22 ? 'Успех' : Number(x) == -8 ? 'Успех' : x == 'Я не робот' ? 'Успех' : 'Вы робот';
-console.log(answer);*/
-
-
-const x = prompt('Сколько будет 7 + или - 15?');
-switch(true) {
-    case Number(x) === 22:
-    case Number(x) === -5:
-        console.log('Успех');
-    break;
-    case x === 'Я не робот':
-    console.log('Успех');
-    break;
-    default:
-    console.log('Вы робот');
-}
+const canbuy = (userBalance > 1000 || userBonus > 100) && !isBanned && !isExist && isSelling;
+console.log(`могу купить игру: ${canbuy ? 'Да ' : 'нет'}`)
