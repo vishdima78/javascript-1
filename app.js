@@ -1,115 +1,224 @@
+// const role1 = 'admin';
+// const role2 = 'user';
+// const role3 = 'superuser';
+
+// const roles = ['admin', 'user', 'superuser'];
+// const userInfo = ['Аня', 25];
+
+// console.log(roles);
+// console.log(roles[0]);
+
+// console.log(roles.length);
+// console.log(roles[roles.length - 1]);
+
+// console.log(roles.at(-1));
+
+// const usersAge = [2040 - 2022, 10 > 0 ? 5 : 0];
+// console.log(usersAge);
 
 
+// const usersName = new Array('вася', 'петя', 'катя');
+// console.log(usersName);
 
-// function logName (name, surname) {
-//     console.log(`Моё имя ${name} ${surname}`);
+
+// function square(el) {
+//     return el * el;
+// }
+
+// console.log(square([1, 2, 3]));
+
+// const users = ['Аня', 'Вика', 'Катя'];
+// users[2] = 'Кристина';
+// console.log(users);
+// console.log(users);
+
+// const arrLenght = users.push('Никита');
+// console.log(users);
+
+// console.log(arrLenght);
+// users.unshift('Вася');
+// console.log(users);
+
+
+// const el = users.pop();
+// console.log(el);
+// console.log(users);
+
+// const el2 = users.shift();
+// console.log(el2);
+// console.log(users);
+
+// const roles = ['user', 'admin', 'manager'];
+// const elIndex = roles.indexOf('admin');
+// console.log (elIndex);
+// const elIndex2 = roles.indexOf('superuser');
+// console.log (elIndex2);
+
+// if (roles.indexOf('admin') >=0) {
+//     console.log('Доступ есть');
+// }
+
+
+// if(roles.includes('admin')) {
+//         console.log('Доступ есть');
+// }
+
+// const roles = ['user', 'admin', 'manager', 'superuser'];
+
+// const res = roles.slice(2);
+// console.log(res);
+
+// const res2 = roles.slice(0, 2);
+// console.log(res2);
+
+// const res3 = roles.slice(-1);
+// console.log(res3);
+
+// const res4 = roles.slice(1, -1);
+// console.log(res4);
+
+
+// const res5 = roles.splice(2);
+// console.log(res5);
+// console.log(roles);
+
+// const res6 = roles.splice(2, 1);
+// console.log(res6);
+// console.log(roles);
+
+// const res7 = roles.splice(-1);
+// console.log(res7);
+
+// const res8 = roles.reverse();
+// console.log(res8);
+
+
+// const newRoles = ['sysadmin', 'developer'];
+// const res9 = roles.concat(newRoles);
+// console.log(res9);
+
+
+// const roles = ['user', 'admin', 'manager', 'superuser'];
+
+// const url = 'auth/user/login';
+// const res = url.split('/');
+// console.log(res);
+
+// console.log(roles.join('-'));
+
+
+// const tasks = ['Задача 1'];
+// function addTask(add) {
+//     tasks.push(add);
+// }
+
+// function delTaskName(del) {
+//     const index = tasks.indexOf(del);
+//     if(index === -1) {
+//         return;
+//     }
+//     return tasks.splice(index, 1);
+// }
+
+// function setPriorityName(setname) {
+//     const result = delTaskName(tasks);
+//     if (!result) {
+//         return;
+//     }
+//     tasks.unshift(result[0]);
     
 // }
-// logName('Дима', 'Вишняков');
 
-// function countDepositSum(depositInUSD, month, rate) {
-// return depositInUSD * (1 + rate / 12) ** month;
+// addTask('Задача 2');
+// addTask('Задача 3');
+// console.log(tasks);
+
+// delTaskName('Задача 4');
+// console.log(tasks);
+
+// setPriorityName('Задача 4');
+// console.log(tasks);
+
+// const tasks = ['Задача 1'];
+
+//     function addTask(task) {
+//     tasks.push(task);
 // }
-
-// const example1 = countDepositSum(1000, 24, 0.12);
-// console.log(example1);
-// console.log(countDepositSum(1000, 48, 0.10));
-
-// function powerOfTwo(num) {
-//     return num * num;
-// }
-// console.log(powerOfTwo(5));
-
-// const poft = function (num) {
-//     return num * num;
-// }
-// console.log(poft(6));
-
-// function powerOfTwo(num) {
-//     console.log(num);
-//     return num * num;
-// }
-// console.log(powerOfTwo(5));
-
-
-// const poft = num => {
-//     console.log(num);
-//    return num * num;
-// }
-// console.log(poft(6));
-
-// const toPowerArrow = (num, power) => num ** power;
-// console.log(toPowerArrow(2, 3));
-
-// function toPower(num = 2, power = 2) {
-//     return num  ** power; 
-// }
-// console.log(toPower(2, 3));
-// console.log(toPower(2));
-
-
-// function canAccessWebsite(age) {
-//     if (age < 18) {
-//         return 'Нет';
-//     } 
-//     return 'Да';
-// }
-// console.log(canAccessWebsite(18));
-
-// const canAccessWebsite2 = age => age < 18 ? 'Нет' : 'Да';
-
-// console.log(canAccessWebsite2(18));
-
-
-// const Kg_In_USD = 7;
-// const Km_In_USD = 5;
-
-// function calculateW(present) {
-//     return present * Kg_In_USD;
-// }
-
-// function calculateKm(distance) {
-//     return distance * Km_In_USD;
-// }
-
-// function getExchagePrice (present1, present2, distance) {
-// const price1 =  calculateW(present1);
-// const price2 =  calculateW (present2);
-// const distancePrice = calculateKm (distance);
-// return price1 + price2 + distancePrice;
-// }
-// console.log(getExchagePrice(1, 2, 10));
-
-// function computeCredit(age, hasJob = false) {
-// switch(true) {
-//     case age > 24 && hasJob:
-//         return 500;
-//     case age > 24:
-//         return 100;
-//     default :
-//     return 0;
+// function delTaskName(task) {
+//     const index = tasks.indexOf(task);
+//     if (index === -1) {
+//         return;
 //     }
+//     return tasks.splice(index, 1);
 // }
 
-// function canBuy(productPrice, age,  money, hasJob = false) {
-//     const creditMoney = computeCredit(age, hasJob);
-//     return productPrice <= money + creditMoney;
-// }
-
-// console.log(canBuy(2000, 25, 1500, true));
-// function credit(age, job = false) {
-//     switch(true) {
-//         case age > 24 && job:
-//             return 500;
-//         case age > 24:
-//         return 100;
-//         default:
-//             return 0;
+// function setPriorityName(task) {
+//     const res = delTaskName(task);
+//     if (!res) {
+//         return;
 //     }
-// }
-// function can_buy_macbok(macPrice, age, money, job = false) {
-//     const credit1 = credit(age, job);
-//     return macPrice <= credit1 + money;
+//     tasks.unshift(res[0]);
 // }
 
-// console.log(can_buy_macbok(2000, 25, 1500));
+// addTask('Задача 2');
+// addTask('Задача 3');
+// console.log(tasks);
+
+// delTaskName('Задача 1');
+// console.log(tasks);
+
+// setPriorityName('Задача 3');
+// console.log(tasks);
+
+// const userData = ['Антон', 18, 'Москва'];
+
+
+// function getdata() {
+//     return ['Антон', 18, 'Москва'];
+// }
+// const userName = getdata()[0];
+// const age = getdata()[1];
+// const city = getdata()[2];
+
+// const [userName, age, city] = getdata();
+
+// console.log(userName, age, city);
+
+// const data = [1, 2, 3, 4, 5, 6];
+// const [one, two, ...others] = data;
+// console.log(one, two, others);
+
+// const url = 'https://purpleschool.ru/course/javaspript';
+
+// function getUrlParts(url) {
+//     const [protocol, _, host, ...path] = url.split('/');
+//     if (protocol === 'https:' || protocol === 'http:') {
+//         if (!host.includes('.')) {
+//             return;
+//         }
+//         console.log(protocol, _, host, path);
+//         console.log(`Протокол ${protocol.split(':')[0]}`);
+//         console.log(`Доменное имя ${host}`);
+//         console.log(`Путь внутри сайта : /${path.join('/')}`);
+//     }
+ 
+// }
+
+// getUrlParts(url);
+
+const url = 'https://www.youtube.com/shorts/J02C8qLw9so'
+
+function getUrl(url) {
+    const [protocol, _, adress, ...others] = url.split('/');
+    if (protocol === 'https:' || protocol === 'http:') {
+        if (!adress.includes('.')) {
+            return;
+        }
+        console.log(protocol, _, adress,others);
+        console.log(`Протокол ${protocol.split(':')[0]}`);
+        console.log(`Адреc сайта ${adress}`);
+        console.log(`Остальная часть сайта: /${others.join('/')}`);
+    }
+    
+}
+getUrl(url);
