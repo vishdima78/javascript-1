@@ -1,224 +1,160 @@
-// const role1 = 'admin';
-// const role2 = 'user';
-// const role3 = 'superuser';
-
-// const roles = ['admin', 'user', 'superuser'];
-// const userInfo = ['Аня', 25];
-
-// console.log(roles);
-// console.log(roles[0]);
-
-// console.log(roles.length);
-// console.log(roles[roles.length - 1]);
-
-// console.log(roles.at(-1));
-
-// const usersAge = [2040 - 2022, 10 > 0 ? 5 : 0];
-// console.log(usersAge);
-
-
-// const usersName = new Array('вася', 'петя', 'катя');
-// console.log(usersName);
-
-
-// function square(el) {
-//     return el * el;
-// }
-
-// console.log(square([1, 2, 3]));
-
-// const users = ['Аня', 'Вика', 'Катя'];
-// users[2] = 'Кристина';
-// console.log(users);
-// console.log(users);
-
-// const arrLenght = users.push('Никита');
-// console.log(users);
-
-// console.log(arrLenght);
-// users.unshift('Вася');
-// console.log(users);
-
-
-// const el = users.pop();
-// console.log(el);
-// console.log(users);
-
-// const el2 = users.shift();
-// console.log(el2);
-// console.log(users);
-
-// const roles = ['user', 'admin', 'manager'];
-// const elIndex = roles.indexOf('admin');
-// console.log (elIndex);
-// const elIndex2 = roles.indexOf('superuser');
-// console.log (elIndex2);
-
-// if (roles.indexOf('admin') >=0) {
-//     console.log('Доступ есть');
+// for(let i = 1; i < 10; i++) {
+// console.log(`Наш баланс ${i}$`);
 // }
 
 
-// if(roles.includes('admin')) {
-//         console.log('Доступ есть');
-// }
 
-// const roles = ['user', 'admin', 'manager', 'superuser'];
+// const tasks = ['Задача 1', 'Задача 2', 'Задача 3'];
 
-// const res = roles.slice(2);
-// console.log(res);
-
-// const res2 = roles.slice(0, 2);
-// console.log(res2);
-
-// const res3 = roles.slice(-1);
-// console.log(res3);
-
-// const res4 = roles.slice(1, -1);
-// console.log(res4);
-
-
-// const res5 = roles.splice(2);
-// console.log(res5);
-// console.log(roles);
-
-// const res6 = roles.splice(2, 1);
-// console.log(res6);
-// console.log(roles);
-
-// const res7 = roles.splice(-1);
-// console.log(res7);
-
-// const res8 = roles.reverse();
-// console.log(res8);
-
-
-// const newRoles = ['sysadmin', 'developer'];
-// const res9 = roles.concat(newRoles);
-// console.log(res9);
-
-
-// const roles = ['user', 'admin', 'manager', 'superuser'];
-
-// const url = 'auth/user/login';
-// const res = url.split('/');
-// console.log(res);
-
-// console.log(roles.join('-'));
-
-
-// const tasks = ['Задача 1'];
-// function addTask(add) {
-//     tasks.push(add);
-// }
-
-// function delTaskName(del) {
-//     const index = tasks.indexOf(del);
-//     if(index === -1) {
-//         return;
+// for (let i = 0; i < tasks.length; i++) {
+//     if (tasks[i] === 'Задача 2') {
+//         break;
 //     }
-//     return tasks.splice(index, 1);
+//     console.log(tasks[i]);
 // }
 
-// function setPriorityName(setname) {
-//     const result = delTaskName(tasks);
-//     if (!result) {
-//         return;
-//     }
-//     tasks.unshift(result[0]);
+
+// const arr = ['!', 'JS', 'люблю', 'Я'];
+// const result = [];
+
+// for (let i = arr.length-1; i >= 0; i--) {
+//     result.push(arr[i]);
     
 // }
+// console.log(result.join(' '));
 
-// addTask('Задача 2');
-// addTask('Задача 3');
-// console.log(tasks);
 
-// delTaskName('Задача 4');
-// console.log(tasks);
 
-// setPriorityName('Задача 4');
-// console.log(tasks);
+// const tasks = [[1, 'Задача 1'], [2, 'Задача 2']]
 
-// const tasks = ['Задача 1'];
-
-//     function addTask(task) {
-//     tasks.push(task);
-// }
-// function delTaskName(task) {
-//     const index = tasks.indexOf(task);
-//     if (index === -1) {
-//         return;
+// for (let i = 0; i < tasks.length; i++) {
+//     for (let j = 0; j < tasks[i].length; j++) {
+//         console.log(tasks[i][j]);
 //     }
-//     return tasks.splice(index, 1);
 // }
 
-// function setPriorityName(task) {
-//     const res = delTaskName(task);
-//     if (!res) {
-//         return;
+
+// for (let i = 1; i < 5; i++) {
+//     console.log(`Вывод - ${i}`);
+// }
+
+// let i = 1;
+// while (i < 5) {
+//     console.log(`Вывод - ${i}`);
+//     i++;
+// }
+
+// const arr = [1, 4, 8, 7];
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > 5) {
+//         break;
 //     }
-//     tasks.unshift(res[0]);
+//     console.log(arr[i]);
 // }
 
-// addTask('Задача 2');
-// addTask('Задача 3');
-// console.log(tasks);
-
-// delTaskName('Задача 1');
-// console.log(tasks);
-
-// setPriorityName('Задача 3');
-// console.log(tasks);
-
-// const userData = ['Антон', 18, 'Москва'];
-
-
-// function getdata() {
-//     return ['Антон', 18, 'Москва'];
+// let i = 0
+// while (arr[i] <= 5 && i < arr.length) {
+//     console.log(arr[i]);
+//     i++;
 // }
-// const userName = getdata()[0];
-// const age = getdata()[1];
-// const city = getdata()[2];
+// let j = 0;
+// do {
+//     console.log(j);
+//     j++;
+// } while (j < 0)
 
-// const [userName, age, city] = getdata();
 
-// console.log(userName, age, city);
 
-// const data = [1, 2, 3, 4, 5, 6];
-// const [one, two, ...others] = data;
-// console.log(one, two, others);
+// const arr = [1, 4, 8, 7];
 
-// const url = 'https://purpleschool.ru/course/javaspript';
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
 
-// function getUrlParts(url) {
-//     const [protocol, _, host, ...path] = url.split('/');
-//     if (protocol === 'https:' || protocol === 'http:') {
-//         if (!host.includes('.')) {
-//             return;
+// for (let element of arr) {
+//     console.log(element);
+// }
+
+// for (let index in arr) {
+//      console.log(arr[index]);
+// }
+
+
+
+
+// const operation = [5, 4, 3, 2];
+// let startBalance = 100;
+// let avgIncome = 0;
+// let avgConsumption = 0;
+
+// function closingBalance () {
+//     for (let element of operation) {
+//         startBalance += element;
+//         if (startBalance < 0) {
+//             return console.log(false);
 //         }
-//         console.log(protocol, _, host, path);
-//         console.log(`Протокол ${protocol.split(':')[0]}`);
-//         console.log(`Доменное имя ${host}`);
-//         console.log(`Путь внутри сайта : /${path.join('/')}`);
 //     }
- 
+
+//     console.log(startBalance);
 // }
 
-// getUrlParts(url);
+// closingBalance();
 
-const url = 'https://www.youtube.com/shorts/J02C8qLw9so'
+// function avgBalance () {
+//     for (let element of operation) {
+//         if (element <= 0) {
+        
+//         avgConsumption += element;
+//         } else {
+//         avgIncome += element;
+//         }
 
-function getUrl(url) {
-    const [protocol, _, adress, ...others] = url.split('/');
-    if (protocol === 'https:' || protocol === 'http:') {
-        if (!adress.includes('.')) {
-            return;
-        }
-        console.log(protocol, _, adress,others);
-        console.log(`Протокол ${protocol.split(':')[0]}`);
-        console.log(`Адреc сайта ${adress}`);
-        console.log(`Остальная часть сайта: /${others.join('/')}`);
+//     }
+//     console.log(`Средний доход ${avgIncome} ; Средний расход ${avgConsumption}`)
+//     }
+// avgBalance ();
+
+
+const operation = [5, 224, -30, -2];
+const startingBalance = 100;
+function getBalance(arrayOfOperations, initailBalance) {
+    let balance = initailBalance;
+    for (const element of arrayOfOperations) {
+        balance += element;
     }
-    
+    return balance;
 }
-getUrl(url);
+console.log(getBalance(operation, startingBalance));
+
+function checkOperations(arrayOfOperations, initailBalance) {
+     let balance = initailBalance;
+     let isOk = true
+    for (const element of arrayOfOperations) {
+        balance += element;
+        if (balance < 0) {
+            isOk = false;
+            break;
+        }
+    }
+    return isOk;
+}
+
+function avarageOperations (arrayOfOperations) {
+    let positiveCount = 0;
+    let positiveSum = 0;
+    let negativeCount = 0;
+    let negativeSum = 0;
+    for (const element of arrayOfOperations) {
+        if (element > 0) {
+            positiveCount++;
+            positiveSum += element
+        }
+        if (element < 0) {
+            negativeCount++;
+            negativeSum += element;
+        }
+    }
+    return[positiveSum / positiveCount, negativeSum / negativeCount];
+}
+console.log(avarageOperations(operation))
